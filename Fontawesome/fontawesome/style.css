@@ -1,0 +1,11 @@
+.fa-solid{
+    cursor: pointer;
+    color: blue;
+}
+
+img {
+    float: left;
+    width:  600px;
+    height: 600px;
+    object-fit: cover;
+}
