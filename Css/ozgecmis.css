@@ -37,7 +37,7 @@ figcaption{
 }
 .aside-profile{
 width: 20%;
-margin-top: 60px;
+margin-top: 80px;
 padding: 20px;
 text-align: center;
 float: right;
@@ -54,18 +54,18 @@ float: right;
 #social-icons i{
     padding: 0 5px;
     color: grey;
-    font-size: 12px;
+    font-size: 40px;
+    margin-left: 30px;
 }
 #author_name{
-    font-size: 12px;
+    font-size: 15px;
     font-weight: bold;
 }
 aside p{
-     font-size: 12px;
+     font-size: 15px;
      color: grey;
 }
 footer {
-    position: relative;
     clear: both;
     width: 100%;
     padding: 10px 16px;
@@ -79,7 +79,7 @@ footer {
     margin: 6rem 0 3rem;
   }
   .skill-bars li {
-    height: 0.6rem;
+    height: 0.4rem;
     background: #a1a1a1;
     width: 100%;
     margin-bottom: 6rem;
@@ -91,14 +91,14 @@ footer {
     left: 0;
     top: -3rem;
     font-family: "poppins-bold", sans-serif;
-    color: #313131;
+    color: #03045E;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
     font-size: 1.5rem;
     line-height: 2.4rem;
   }
   .skill-bars li .progress {
-    background: #313131;
+    background: #03045E;
     position: relative;
     overflow: visible;
     height: 100%;
@@ -112,7 +112,7 @@ footer {
     color: white;
     font-size: 1.1rem;
     line-height: 1;
-    background: #313131;
+    background: #03045E;
     padding: 0.6rem 0.6rem;
     border-radius: 3px;
   }
@@ -188,7 +188,6 @@ footer {
     width: 100%;
   }
 
-
   .education .box-container {
   display: flex;
   align-items: center;
@@ -212,6 +211,7 @@ footer {
   color: #fff;
   border-radius: 5rem;
   padding: 0.5rem 0.5rem;
+  margin-left: 12px;
 }
 
 .education .box-container .box h3 {
