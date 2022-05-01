@@ -55,46 +55,44 @@
           </div>
         <div class="col-12 col-lg-6">
           <h2 class="text-head">
-            Know more about us
+            Müzik, insanın ürettiği en güzel sanat eserlerinden biridir.
           </h2>
           <div class="brak-small mb-2"></div>
           <p class="text-para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia dignissimos nemo ex sequi laudantium inventore ab. Dolorem iure ratione omnis voluptate adipisci velit laudantium voluptatem, provident, optio, quo repudiandae a!</p>
-          <div class="row">
-            <div class="col-12 col-md-4 mb-2 mb-md-0">
-              <div class="box">
-                <i class="fa fa-sers mb-3"></i>
-                <h4 class="mb-0">Total</h4>
-                <p class="mb-0">999</p>
+          <div class="playlist row">
+            <div class=" col-12 col-md-4 mb-2 mb-md-0">
+              <div class="box" onclick="window.open('https://open.spotify.com/playlist/5sC44rbpbbgecjRRVGVaaS?si=a36a6269c7ec4f51','new_window');" style="display:block;">
+                <h4 class="mb-0">Rock & Metal</h4>
+                <img  src="img/rock.png" alt="">
               </div>
             </div>
             <div class="col-12 col-md-4 mb-2 mb-md-0">
-              <div class="box">
-                <i class="fa fa-sers mb-3"></i>
-                <h4 class="mb-0">Total</h4>
-                <p class="mb-0">999</p>
+              <div class="box" onclick="window.open('https://open.spotify.com/playlist/538vl9ZMqNnqSAQXkPwUnt?si=f56941df5a954a8e','new_window');" style="display:block;">
+                <h4 class="mb-0">Klasik muzik severlere</h4>
+                <img src="img/treble-clef.png" alt="">
               </div>
             </div>
             <div class="col-12 col-md-4 mb-2 mb-md-0">
-              <div class="box">
-                <i class="fa fa-sers mb-3"></i>
-                <h4 class="mb-0">Total</h4>
-                <p class="mb-0">999</p>
+              <div class="box" onclick="window.open('https://open.spotify.com/playlist/194DnG6RUwzOdqtr9XxIA5?si=1cafb8a3325a4eed','new_window');" style="display:block;">
+                <h4 class="mb-0">Spor yapanlara özel</h4>
+                <img src="img/dumbbell.png" alt="">
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="container">        
+      <div class="container api">   
+        <h3>Kendi müzik zevklerinize göre müzik bulabileceğiniz bir spotify api ekledim</h3>     
         <form action="">
             <input type="hidden" id='hidden_token'>
-            <div class="col-sm-6 form-group row mt-4 px-0">
-                <label for="Genre" class="form-label col-sm-2">Genre:</label>
+            <div  class="col-sm-6 form-group row mt-4 px-0  ">
+                <label  for="Genre" class="form-label col-sm-2 ">Tür</label>
                 <select name="" id="select_genre" class="form-control form-control-sm col-sm-10">
                     <option>Select...</option>                    
                 </select>
             </div>
             <div class="col-sm-6 form-group row px-0">
-                <label for="Genre" class="form-label col-sm-2">Playlists:</label>
+                <label for="Genre" class="form-label col-sm-2 ">Müzikler</label>
                 <select name="" id="select_playlist" class="form-control form-control-sm col-sm-10">
                     <option>Select...</option>                    
                 </select>
@@ -104,7 +102,7 @@
             </div>          
         </form>        
         <div class="row">
-            <div class="col-sm-6 px-0">
+            <div class="col-sm-6 px-0 py-3">
                 <div class="list-group song-list">
                     
                 </div>                                             
@@ -112,6 +110,9 @@
             <div class="offset-md-1 col-sm-4" id="song-detail">                
             </div>
         </div>   
+    </div>
+    <div class="row">
+      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/672u0bfhpzLBpe6UieOmSC?utm_source=generator" width="500" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
     </div>
       </div>
     </div>
@@ -209,6 +210,7 @@
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
 <script src="Js/index.js"></script>
+<script src="Js/app.js"></script>
 </body>
 
 </html>

@@ -93,3 +93,54 @@ h5,h6,a,p{
 .about-us-section .box:hover::before{
     transform: scale(1.2);
 }
+.api img{
+    width: 150px;
+    height: 100px;
+}
+
+.btn.dropdown-toggle  {
+    width:150px;
+    text-align:left;
+}
+
+span.caret {
+    position: absolute;
+    left: 90%;
+    top: 45%;
+}
+
+label {
+    padding-top:5px;
+}
+
+.form-label {
+    padding-left:0px !important;
+}
+
+
+.btn-success {
+    background-color: #3b7d4a!important;
+}
+
+.btn-success:hover {
+    background-color: #4daf64!important;
+}
+
+img.track {
+    border: 1px solid #8a8a8a;
+}
+#select-genre{
+    display: inline-block;
+    text-align: left;
+}
+
+.playlist img{
+    width: 40px;
+    height: 40px;
+}
+.box{
+    cursor: pointer;
+}
+iframe{
+    float: right;
+}
