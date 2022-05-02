@@ -46,114 +46,93 @@
     </nav>
   </header>
   <!-- Navbar end -->
-  <div id="iletisim" class="iletişim">
-    <form action="Php/iletisim.php" method="POST" name="Form" onsubmit="return isItEmpty()" style="padding: 20px; text-align: center; background-color: white; margin-right: 20%; margin-left: 20%; border: 1px solid black;border-left: 15px solid #386f94; border-radius: 5px;">	
-      <div class="row">
-        <div class="col">
-          <div class="input-group">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="">İsim ve Soyisim</span>
+  <div class="adminIletisim">
+        <div class="row">
+            <div class="col adminIletisimTablo">
+                <table>
+                    <tr>
+                        <th>
+                            İsim Soyisim
+                        </th>
+                        <td>
+                            :
+                        </td>
+                        <td>
+                        <?php echo"".$_POST["isim"]." ".$_POST["soyisim"]?>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            Telefon Numarası
+                        </th>
+                        <td>
+                            :
+                        </td>
+                        <td>
+                        <?php echo"".$_POST["telefon"]?>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            Cinsiyet
+                        </th>
+                        <td>
+                            :
+                        </td>
+                        <td>
+                        <?php echo"".$_POST["cinsiyet"]?>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            Amaç
+                        </th>
+                        <td>
+                            :
+                        </td>
+                        <td>
+                        <?php $amaclar=$_POST['amaç']; foreach($amaclar as $amac){echo" ".$amac.",";}?>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            Konu
+                        </th>
+                        <td>
+                            :
+                        </td>
+                        <td>
+                        <?php echo"".$_POST["konu"]?>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            Kime
+                        </th>
+                        <td>
+                            :
+                        </td>
+                        <td>
+                        <?php echo"".$_POST["kime"]?>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            Mesaj
+                        </th>
+                        <td>
+                            :
+                        </td>
+                        <td>
+                        <?php echo"".$_POST["mesaj"]?>
+                        </td>
+                    </tr>
+                </table>
+            <h2></h2>
             </div>
-            <input type="text" name="isim" placeholder="isminiz" class="form-control">
-            <input type="text" name="soyisim" placeholder="Soyisminiz" class="form-control">
-          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <div class="input-group mb-3">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="basic-addon1">Telefon Numaranız</span>
-              <span class="input-group-text" id="basic-addon1">+90</span>
-            </div>
-            <input type="number" class="form-control" placeholder=" 5xx xxx xxxx" name="telefon" aria-describedby="basic-addon1">
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <div class="input-group">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="basic-addon1">Cinsiyetiniz:</span>
-            </div>
-            <div class="input-group-append">
-              <div class="input-group-text">
-                <input type="radio" name="cinsiyet" value="erkek">Erkek
-              </div>
-              <div class="input-group-text">
-                <input type="radio" name="cinsiyet" value="kadın">Kadın
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <div class="input-group">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="basic-addon1">Amaç: </span>
-            </div>
-            <div class="input-group-append">
-              <div class="input-group-text">
-                <input type="checkbox" name="amaç[]" value="istek">İstek
-              </div>
-              <div class="input-group-text">
-                <input type="checkbox" name="amaç[]" value="öneri">Öneri
-              </div>
-              <div class="input-group-text">
-                <input type="checkbox" name="amaç[]" value="şikayet">Şikayet
-              </div>
-              <div class="input-group-text">
-                <input type="checkbox" name="amaç[]" value="diğer">Diğer
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <div class="input-group mb-3">
-            <div class="input-group-prepend">
-              <label class="input-group-text" for="inputGroupSelect01">Yazı Hakkında</label>
-            </div>
-            <select class="custom-select" name="konu" id="inputGroupSelect01">
-              <option selected>Konu?</option>
-              <option value="sayfa yönetimi">Sayfa yönetimi</option>
-              <option value="tasarım">Tasarım</option>
-              <option value="kodlama">Kodlama</option>
-            </select>
-            <select class="custom-select" name="kime" id="inputGroupSelect01">
-              <option selected>Kime?</option>
-              <option value="sayfa yönetimi">Sayfa yöneticisi</option>
-              <option value="tasarım">Programcı</option>
-            </select>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <div class="input-group">
-            <div class="input-group-prepend">
-              <span class="input-group-text">Mesajınız</span>
-            </div>
-            <textarea class="form-control" name="mesaj" aria-label="With textarea"></textarea>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <div class="input-group mb-3">
-            <div class="input-group-prepend">
-              <button class="btn btn-outline-secondary" type="submit">Gönder</button>
-            </div>
-            <div class="input-group-append">
-              <button class="btn btn-outline-secondary" type="reset">Temizle</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </form>
-</div>
+    </div>
+
   <!-- back to top -->
   <button
         type="button"
@@ -247,7 +226,6 @@
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
 <script src="Js/index.js"></script>
-<script src="Js/iletisim.js"></script>
 </body>
 
 </html>

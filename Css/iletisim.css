@@ -1,0 +1,17 @@
+html{
+    background-color: #0d3b66;
+}
+
+#navbar{
+    background-color:#184874;
+    opacity: 0.7;
+}
+
+.input-group-text{
+    display: inline-block;
+}
+
+#iletisim{
+    background: linear-gradient(to bottom, #4f82bd, #0d3b66); 
+    padding: 5%;
+}
