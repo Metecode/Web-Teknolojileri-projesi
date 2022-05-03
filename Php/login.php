@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="tr">
+
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -10,7 +11,6 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="Css/index.css">
   <link rel="stylesheet" href="Fontawesome/fontawesome/all.css">
-  <link rel="stylesheet" href="Css/ozgecmis.css">
   <title>Ana Sayfa</title>
 </head>
 
@@ -26,139 +26,46 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
             <li class="nav-item ">
-              <a class="nav-link active " aria-current="page" href="ozgecmis.html">Özgeçmiş</a>
+              <a class="nav-link " aria-current="page" href="ozgecmis.html">Özgeçmiş</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link  " href="ilgi-alanlari.html">İlgi Alanları</a>
+              <a class="nav-link  active" href="ilgi-alanlari.html">İlgi Alanları</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="sehrim.html">Şehrim</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="mirasimiz.html">Mirasımız</a>
+              <a class="nav-link" href="mirasimiz.html">Mirasımız</a>
             </li>
             <li class="nav-item">
-               <a class="nav-link " href="iletisim.html">İletişim</a>
+               <a class="nav-link" href="iletisim.html">İletişim</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="login.html">Giriş Yap</a>
+              <a class="nav-link" href="login.html">Giriş Yap</a>
            </li>
           </ul>
         </div>
       </div>
     </nav>
+    <!-- Navbar end -->
   </header>
-  <!-- Navbar end -->
-  <main>
-    <article>
-      <section class="pt-3">
-        <h2>Özgeçmiş</h1>
-        <ul class="list-group list-group-flush">
-         <li class="list-group-item">
-           <strong>Tam Ad:</strong>
-           <span>İsmail Mete Uçar<area shape="rect" coords="" href="" alt=""></span>
-         </li>
-         <li class="list-group-item">
-           <strong>DOĞUM TARİHİ:</strong>
-           <span>9 Haziran 2001</span>
-         </li >
-         <li class="list-group-item">
-           <strong>Meslek:</strong>
-           <span>Bilgisayar Mühendisliği Öğrencisi</span>
-         </li>
- 
-         <li class="list-group-item">
-           <strong>Email:</strong>
-           <span>i.meteucar@gmail.com</span>
-         </li>
-       </ul>
-      </section>
-      <section >
-        <h2>Yetenekler</h2>
-        <figure>
-          <img src="img/skillsandtech.jpg" alt="Skills">
-        </figure>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius perspiciatis modi velit dolores non tenetur dolore esse, debitis, aut magni vero quidem voluptates nesciunt quos hic molestiae laudantium. Necessitatibus, possimus.</p>
-      </section>
-        <div class="tab-full">
-          <section class="education" id="education">
-            <h2>Eğitim</h2>
-            <div class="box-container">
-              <div class="box">
-                <i class="fas fa-graduation-cap"></i>
-                <span>2006 - 2010</span>
-                <h3>Aydın Güzelhisar İlkokulu</h3>
-              </div>
-  
-              <div class="box">
-                <i class="fas fa-graduation-cap"></i>
-                <span>2010 - 2014</span>
-                <h3>Aydın Hacı Lütfiye Atay Ortaokulu</h3>
-              </div>
-  
-              <div class="box">
-                <i class="fas fa-graduation-cap"></i>
-                <span>2014 - 2018</span>
-                <h3>Aydın Atatürk Anadolu Lisesi</h3>
-              </div>
-  
-              <div class="box">
-                <i class="fas fa-graduation-cap"></i>
-                <span>2020 - </span>
-                <h3>Sakarya Üniversitesi Bilgisayar Mühendisliği</h3>
-              </div>
-            </div>
-          </section>
+  <div class="admin">
+    <div class="row">
+      <div class="col adminIletisimTablo">
+    <?php if($_POST["name"]=="G201210051@sakarya.edu.tr" && $_POST["password"]==G201210051)
+			{
+        echo"Hoşgeldin ".$_POST["name"];
+        echo"<br>Girişin Onaylandı.";
+      }
+      else{
+        echo "Kullanıcı epostası yada şifre hatalı";
+        header("refresh:2; login.html");
+      }    
+        ?>
         </div>
-
-      <section>
-        <h2>Katıldığım Topluluklar</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis aperiam eos nobis maiores rem? Maxime tempore quibusdam illum qui. Sed sapiente tenetur at dolores veniam praesentium sunt vel eum cupiditate.</p>
-        
-      </section>
-    </article>
-      <aside class="aside-profile">
-        <img src="img/pp.png" alt="Mete ucar">
-        <p id="author_name">Mete Uçar</p>
-        <nav id="social_icons">
-          <i class="fab fa-instagram"></i>
-          <i class="fab fa-linkedin"></i>
-          <i class="fab fa-github"></i>
-        </nav>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus dicta ratione, cum dignissimos adipisci, corrupti asperiores, dolore hic eum doloribus sapiente exercitationem officiis enim facere totam architecto. Quaerat, neque dicta?</p> 
-      </aside>
-      <div class="col-md-6 tab-full">
-        <section >
-          <h2 style="margin-left: 22px;">Programlama Becerileri</h2>
-          
-          <ul class="skill-bars">
-            <li>
-              <div class="progress percent60"><span>60%</span></div>
-              <strong>Swift</strong>
-            </li>
-            <li>
-              <div class="progress percent85"><span>85%</span></div>
-              <strong>Firebase</strong>
-            </li>
-            <li>
-              <div class="progress percent80"><span>80%</span></div>
-              <strong>HTML</strong>
-            </li>
-            <li>
-              <div class="progress percent20"><span>70%</span></div>
-              <strong>CSS</strong>
-            </li>
-            <li>
-              <div class="progress percent40"><span>40%</span></div>
-              <strong>JS</strong>
-            </li>
-          </ul>
-        </section>
       </div>
-
-
-  </main>
-
+    </div>
+  
   <!-- back to top -->
   <button
         type="button"
