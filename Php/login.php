@@ -52,7 +52,7 @@
   <div class="admin">
     <div class="row">
       <div class="col adminIletisimTablo">
-    <?php if($_POST["name"]=="G201210051@sakarya.edu.tr" && $_POST["password"]==G201210051)
+    <?php if($_POST["name"]=="G201210051@sakarya.edu.tr" && $_POST["password"]=="G201210051")
 			{
         echo"Hoşgeldin ".$_POST["name"];
         echo"<br>Girişin Onaylandı.";
