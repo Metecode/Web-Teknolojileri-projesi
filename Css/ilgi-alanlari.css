@@ -144,3 +144,7 @@ img.track {
 iframe{
     float: right;
 }
+#footer-color a{
+    text-decoration: none;
+    color: white;
+}

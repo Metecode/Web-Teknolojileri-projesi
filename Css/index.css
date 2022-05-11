@@ -199,5 +199,8 @@ a{
 		font-size: 15px;
 	}
 }
-
+#footer-color a{
+  text-decoration: none;
+  color: white;
+}
 
