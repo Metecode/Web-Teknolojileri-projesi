@@ -211,7 +211,7 @@ footer {
   color: #fff;
   border-radius: 5rem;
   padding: 0.5rem 0.5rem;
-  margin-left: 12px;
+  margin-left: 18px;
 }
 
 .education .box-container .box h3 {
@@ -243,49 +243,6 @@ footer {
   }
 }
 
-@media screen and (max-width: 991.98px) {
-  /* Navbar */
-  .menu {
-    display: block;
-    cursor: pointer;
-    z-index: 2;
-  }
-
-  .collapse {
-    position: relative;
-    right: 0px;
-    top: -115px;
-    width: 100%;
-    height: 100vh;
-    display: none;
-    background-color: #0f222d;
-  }
-
-  .menuController {
-    display: flex !important;
-  }
-
-  .exitController {
-    display: flex !important;
-  }
-
-  .navbar-nav {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .nav-item {
-    margin-bottom: 15px;
-    font-size: 24px;
-  }
-
-  .collapse.animationIn {
-    animation: fadeInRight;
-    animation-duration: 0.5s;
-  }
-
-  /* /Navbar */
-}
 
 @media screen and (max-width: 767.98px) {
   .education .box-container .box {
@@ -293,9 +250,7 @@ footer {
   }
   .education .box-container .box span {
     padding: 0.5rem 2.5rem;
+    float: left;
   }
 }
 
-a{
-  
-}
