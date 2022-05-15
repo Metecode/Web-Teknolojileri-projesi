@@ -14,7 +14,8 @@ Bu repository _Sakarya Üniversitesi_ bilgisayar mühendisliği ***Web Teknoloji
 
 Sayfalar arası geçiş bir navigasyon barı ile yapılacaktır.Site responsive yapıda olacaktır.
 
-#### Sayfanın canlı haline adres çubuğuna "[https://G201210051.000webhostapp.com/](https://G201210051.000webhostapp.com/)" yazarak ulaçabilirsiniz.
+#### Sayfanın canlı haline adres çubuğuna "[https://G201210051.000webhostapp.com/](https://G201210051.000webhostapp.com/)" yazarak ulaçabilirsiniz. ***Eğer link çalışmazsa vpn ile açmayı deneyiniz!***
+Alternatif adres: "[https://merry-cannoli-7c9f40.netlify.app/](https://merry-cannoli-7c9f40.netlify.app/)"
 
 > **Aşağıdaki kodları terminalde dosya konumundayken kullanın.**
 
