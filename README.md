@@ -19,6 +19,7 @@ Alternatif adres: "[https://merry-cannoli-7c9f40.netlify.app/](https://merry-can
 
 > **Aşağıdaki kodları terminalde dosya konumundayken kullanın.**
 
+Mete
 
 ### Projeyi klonlama
 ```
@@ -32,7 +33,7 @@ $ code .
 
 ### Proje Ön İzleme
 
-![image](/img/web.gif)
+![image](img/web.gif)
 
 ***
 _Mete Uçar_
